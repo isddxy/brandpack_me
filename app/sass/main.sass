@@ -55,6 +55,7 @@ body
 	overflow-x: hidden
 	background-color: #666666
 	color: #000
+	background-color: #161616
 
 .img-responsive
 	display: block
@@ -71,6 +72,8 @@ body
 
 
 .wrapper
+	z-index: 1000
+	opacity: 1
 	max-width: 400px
 	margin: 0 auto
 	padding: 50px 0
@@ -138,6 +141,7 @@ body
 		border-radius: 23px
 		text-align: center
 		color: #fff
+		margin-top: 2px
 		.button
 			background-color: #fff
 			border-radius: 30px
@@ -187,5 +191,16 @@ body
 			line-height: 140%
 			opacity: .6
 
+.noise
+	position: fixed
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	content: ""
+	opacity: .05
+	z-index: -100
+	pointer-events: none
+	background-image: url('/img/noise.gif')
 
 @import "media" // Всегда в конце
